@@ -1,0 +1,43 @@
+# "Cadence is a music app that allows you to write lyrics, record demos, and freestyle your music. It provides a user-friendly interface for musicians and songwriters to create and organize their musical ideas."
+name: cadence
+description: "Cadence — write lyrics, record freestyles & create demos. Organize your musical ideas" 
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10+1   
+  file_picker: ^12.3.0   
+  dotted_border: ^3.1.0 
+  shared_preferences: ^2.3.2   
+  path_provider: ^2.1.4        
+  just_audio: ^0.9.42   
+  record: ^6.2.1   
+  audio_session: ^0.1.25
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: PerpetuaTitlingMT-Bold
+      fonts:
+        - asset: assets/fonts/PERTIBD.TTF
+    - family: PerpetuaTitlingMT
+      fonts:
+        - asset: assets/fonts/PERTILI.TTF
+    - family: MontserratBlack
+      fonts:
+        - asset: assets/fonts/Montserrat-Black.ttf
